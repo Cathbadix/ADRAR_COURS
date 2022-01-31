@@ -184,6 +184,12 @@ for i in range(1, 101):
 # Exercice 12 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 302253
 print("Exercice 12")
 # TODO
+result = 0
+i = 0
+while result < 302253:
+    i += 1
+    result += i
+print(i)
 
 # Exercice 13 : écrire dans la console tous les résultats possibles de lancers de deux dé :
 # 1 1
@@ -195,6 +201,9 @@ print("Exercice 12")
 # 6 6
 print("Exercice 13")
 # TODO
+for i in range(1,7):
+    for n in range(1,7):
+        print(i, n)
 
 # Exercice 14 : adapter l'exercice précédent pour enlever les doublons (on ne veut pas afficher 1 2 et 2 1, mais seulement l'un des deux).
 print("Exercice 14")

@@ -27,3 +27,11 @@
 # Utiliser la fonction f6 pour écrire dans la console la somme de 42 et 77.
 
 # Utiliser la fonction f6 pour incrémenter la variable a de la somme de 42 et 77.
+
+# Écrire une fonction f7 qui prend deux nombres en entrée et qui retourne le plus grand des deux.
+
+# Écrire une fonction f8 qui prend trois nombres en entrée et qui retourne le plus grand des trois.
+
+# (Au moins deux versions possibles : sans utiliser f7, et en utilisant f7).
+
+# Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.

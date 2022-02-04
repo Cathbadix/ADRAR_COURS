@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'redneckregular';
+    src: url('../font/redneck-webfont.woff2') format('woff2'),
+         url('../font/redneck-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.titre
+{
+    color: darkgoldenrod;
+    font-weight: bold;
+    margin-left: 30rem;
+}
+
+h1
+{
+    font-size: 3rem;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+p
+{
+    margin-left: 20rem;
+    font-size: 1rem;
+}
+
+.p01
+{
+    font-family: Baskerville, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    color: black;
+}
+
+.p02
+{
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+.p03
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', Arial, sans-serif;
+    color: red;
+}
+
+.p04
+{
+    font-family: Futura, 'Century Gothic', AppleGothic, sans-serif;
+    color: coral;
+}
+
+.p05
+{
+    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotyp', serif;
+    color: green;
+}
+
+.p06
+{
+    font-family: Geneva, Verdana, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    color: yellow;
+}
+
+.p07
+{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: violet;
+}
+
+.p08
+{
+    font-family: GillSans, Trebuchet, Calibri, sans-serif;
+    color: darkmagenta;
+}
+
+.p09
+{
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    color: orangered;
+}
+
+.p10
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkolivegreen;
+}
+
+.p11
+{
+    font-family: Palatino, 'Palatino Linotype', 'Hoefler Text', Times, 'Times New Roman',serif;
+    color: crimson;
+}
+
+.p12
+{
+    font-family: Trebuchet, Tahoma, Arial, sans-serif;
+    color: magenta;
+}
+
+.p13
+{
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    color: maroon;
+}
+
+#google
+{
+    font-family: 'Arima Madurai', cursive;
+}
+
+#local
+{
+    font-family: 'redneckregular';
+}

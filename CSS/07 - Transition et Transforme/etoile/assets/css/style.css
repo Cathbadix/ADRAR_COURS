@@ -1,0 +1,78 @@
+body
+{
+background-color: black;
+}
+
+body
+{
+    width: 40rem;
+    height: 30rem;
+    margin: auto;
+    margin-top: 10rem;
+    background-color: #514a7c;
+}
+
+div
+{
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    position: fixed;
+    left: 20rem;
+    top: 20rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 0.1rem solid white;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: agrandir 6s infinite;
+}
+
+@keyframes agrandir {
+    from
+    {
+        transform: scale(0);
+    }
+    to 
+    {
+        transform: scale(1);
+    }
+    /* 0% { transform: scale(0);}   
+    100% {transform: scale(1);}     */
+}
+
+figure
+{
+    position: fixed;
+    left: 20.2rem;
+    top: 20rem;
+}
+img
+{
+    height: 10rem;
+    width: 10rem;    
+    animation: clignote 6s infinite alternate;
+}
+
+@keyframes clignote {
+    from
+    {
+        opacity: 1;
+    }
+    to 
+    {  
+        opacity: 0;
+    }
+    /* 0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}     */
+}
+
+img:hover
+{
+    transition: 2s;
+    transform: rotate(360deg);
+}
+
+

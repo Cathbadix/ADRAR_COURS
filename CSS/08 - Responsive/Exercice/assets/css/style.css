@@ -1,0 +1,267 @@
+.bc{background-color: #C9EFFF;}
+.bf{background-color: #29ABE2;}
+.gc{background-color: #00000029;}
+.gf{background-color: #707070;}
+.db{background-color: #000000;}
+
+
+header
+{
+    width: 1920px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav
+{
+    width: 1033px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a
+{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav img
+{
+    width: 104px;
+    height: 70px;
+}
+
+main
+{
+    width: 1920px;
+    margin-bottom: 20px;
+}
+
+.article1
+{
+    width: 1033px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.article1 img
+{
+    width: 418px;
+    height: 338px;
+}
+
+.article1 section:nth-of-type(2)
+{
+    margin-left: 38px;
+}
+.article1 section h1
+{
+    width: 577px;
+    height: 101px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 101px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #29ABE2;
+}
+
+.article1 section p
+{
+    width: 577px;
+    height: 300px;
+    font-size: 20px;
+    color: #707070;;
+}
+
+div
+{
+    width: 1033px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div article
+{
+    width: 260px;
+}
+
+div article section img
+{
+    width: 260px;
+    height: 159px;
+}
+
+div article section h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 101px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #29ABE2;
+}
+
+div article section p
+{
+    font-size: 20px;
+    color: #707070;;
+    text-align: left;
+}
+
+footer
+{
+    width: 1920px;
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width:375px)
+{
+    body 
+    {
+        width: 375px;
+    }
+    header
+    {
+        width: 375px;
+        height: 252px;
+    }
+ 
+    header nav 
+    {
+        height: 252px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .a1{order: 0;}
+    .a2{order: 0;}
+    .a3{order: -1;}
+    .a4{order: 0;}
+    .a6{order: 0;}
+
+
+    main 
+    {
+        width: 375px;
+    }
+
+    main .article1
+    {
+        width: 325px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;  
+        margin-bottom: -18px;   
+    }
+
+    main .article1 section
+    {
+        width: 325px;
+        margin: auto;
+        /* margin-left: -15px; */
+        
+    }
+    
+    main .article1 section:last-child
+    {
+        /* margin-left: -15px; */
+        margin: auto;
+    }
+    
+    main .article1 img
+    {
+        width: 325px;
+        height: 262px;
+    }
+
+    main .article1 h1
+    {
+        width: 325px;
+        text-align: center;
+    }
+
+    main .article1 p 
+    {
+        width: 325px;
+    }
+
+    div 
+    {
+        width: 322px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    div article 
+    {
+        width: 322px;
+        /* height: 189px; */
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .leftsec
+    {
+        width: 92px;
+        /* height: 189px; */
+    }
+    .rightsec
+    {
+        width: 221;
+        /* height: 189px; */
+        margin-left: 10px;
+    }
+    
+    div article section img 
+    {
+        width: 92px;
+        height: 56px;
+        margin-top: 40px;
+    }
+    
+    div article section h2
+    {
+        font-size: 20px;
+    }
+    
+    div article section p 
+    {
+        width: 221px;
+        /* height: 148px; */
+        font-size: 15px;
+        margin-top: -30px;
+    }
+    
+
+    footer 
+    {
+        width: 375px;
+        height: 204px;
+    }
+    footer nav
+    {
+        width: 375px;
+        height: 204px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+
+}

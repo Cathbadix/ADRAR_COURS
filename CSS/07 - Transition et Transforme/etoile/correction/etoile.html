@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{background-color: #514a7c;}
+        figure{
+            margin: 0;
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+             top: 45%;
+            left: 45%;
+            animation: toto 3s infinite alternate;
+        }
+        figure::after{
+            content: '';
+            display: block;
+            width: 10rem;
+            height: 10rem;
+           top: 0;
+           position: absolute;
+            border: .1rem solid white;
+            border-radius: 50%;
+            animation: aura 3s infinite;
+        }
+        img{
+            width: 100%;
+            transition: all 1s ease-in-out;
+        }
+        img:hover{
+            transform: rotate(360deg);
+        }
+        @keyframes toto{
+           from{
+                opacity: 1;
+           }
+           to{
+                opacity: 0;
+           }
+        }
+        @keyframes aura{
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="etoile.png" alt="">
+    </figure>
+    <div></div>
+  
+</body>
+</html>

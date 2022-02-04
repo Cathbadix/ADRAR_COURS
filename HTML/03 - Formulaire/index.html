@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo formulaire</title>
+    <meta name="description" content="exercice pour apprendre a créer des formulaires en HTML">
+</head>
+<body>
+    <form action="send.php" method="post">
+        <fieldset>
+            <legend>Legende de formulaire</legend>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp" required>
+            <br>
+            <label for="mail">Votre email</label>
+            <input type="email" name="mail" id="mail" required>
+            <br>
+            <label for="croix"> blabla</label>
+            <input type="checkbox" name="croix" id="croix">
+            <br>
+            <p>Voici des inputs type i-radio</p>
+            <label for="tata">TATa</label>
+            <input type="radio" name="toujours pareil" id="tata" value="TATa">
+            <label for="toto">TOTO</label>
+            <input type="radio" name="toujours pareil" id="toto" value="toto">
+            <label for="tutu">tutu</label>
+            <input type="radio" name="different" id="tutu" value="tutu">
+            <br>
+            <label for="selection-dents">Je me brosse les dents :</label>
+            <select name="selection-dents" id="selection-dents">
+                <option value="jamais">Jamais</option>
+                <option value="1fois">1 fois par jour</option>
+                <option value="3fois" selected>3 fois par jour</option>
+                <optgroup label="selection-dents :">
+                    <option value="2fois">2fois par jour</option>
+                    <option value="cafe">apres chaque café</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</body>
+</html>

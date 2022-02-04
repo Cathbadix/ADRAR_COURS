@@ -1,0 +1,66 @@
+/* -----VARIABLES----- */
+:root
+{
+    --vertclair: #ABCA074D;
+    --vertfluo: #ABCA07;
+    --vertfoncé: #566504;
+    --gris: #00000029;
+    --noir: #000000;
+    --impact: 'Impact, sans-serif;'
+}
+
+/* -----GÉNÉRALES----- */
+.dGrid
+{
+    display: grid;
+}
+
+.center
+{
+    width: 80%;
+    margin: auto;
+}
+
+/* -----HEADER----- */
+header
+{
+    box-shadow: 0px 3px 36px var(--gris)
+}
+
+header nav
+{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+header nav figure
+{
+    width: 6rem;
+    padding: 1rem;
+}
+header nav img
+{
+    width: 100%;
+}
+
+header nav ul
+{
+    grid-template-columns: repeat(4,1fr);
+    justify-content: end;
+    
+}
+
+li{
+    justify-content: center;
+}
+
+header a
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--vertfluo);
+}
+
+/* -----MAIN----- */

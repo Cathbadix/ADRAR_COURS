@@ -1,0 +1,55 @@
+/* GLOBAL */
+body{
+    padding: 1rem;
+}
+.centre{
+    text-align: center;
+}
+.titre{
+    font-size: 1.5rem;
+}
+hr{
+    width: 50%;
+    margin-top: 1rem;
+    /* background-color: aqua;
+    height: 1px;
+    border: none; */
+    border: .05rem solid aqua;
+}
+h2{
+    /* text-align: center; */
+    color: yellowgreen;
+    margin-bottom: 1rem;
+}
+h3{
+    /* text-align: center; */
+    color: darkblue;
+}
+
+
+/* PREMIERE PARTIE */
+h1{
+    color: coral;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+/* DEUXIEME PARTIE */
+div address, div address a{
+    color: darkmagenta;
+    text-decoration: none;
+    font-style: normal;
+}
+/* TROISIEME PARTIE */
+.liste{
+    border: .1rem dotted red;
+    padding: 5%;
+    /* padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%; */
+    /* padding: 15% 5% 15% 5% ; */
+    /* padding: 15% 5%; */
+    margin: 2rem auto;
+    width: 50%;
+    list-style: none;
+}

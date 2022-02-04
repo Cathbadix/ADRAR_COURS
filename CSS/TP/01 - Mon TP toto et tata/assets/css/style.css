@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+}
+.maindiv
+{
+    width: 600px;
+    height: auto;
+    background-color: white;
+}
+.div1
+{
+    text-align: center;
+}
+
+h1
+{
+    color: coral;
+}
+
+h2
+{
+    color: rgb(98, 187, 9);
+    text-align: center;
+}
+
+.div2 p, a
+{
+    color: darkmagenta;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.div3
+{
+    text-align: center; 
+    padding: 0px 150px 0px 150px;
+}
+
+h3
+{
+    color: blue;
+}
+
+
+ul, ol
+{
+    
+    list-style: none;
+    border: 1px dashed red ;
+    padding: 50px 0px 50px 0px;
+    text-align: left;
+    padding: 30px 0px 40px 50px;
+}
+
+hr
+{
+    border: 2px solid cyan;
+    width: 50%;
+}
+
+.hrfine
+{
+    border: 1px solid cyan;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le bon miel</title>
+    <meta name="description" content="intégration d'une page en html css avec du float">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/bee-logo.png">
+</head>
+<body>
+    <header>
+
+                <nav class="container">
+            <a href="#index.html" id="logo" class="fl">
+                <img src="assets/img/bee-logo.png" alt="logo bee le bon miel">
+            </a>
+            <a href="index.html" class="lien-nav fl">Accueil</a>
+            <a href="boutique.html" class="lien-nav fl">Boutique</a>
+            <a href="le-miel.html"class="lien-nav fl">Le miel</a>
+            <a href="manifestation.html" class="lien-nav fl">Manifestation</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="container">
+                <h1>Vente de miel 100% français</h1>
+                <p>BEE vous propose une véritable cave à miel de plus d'une quarantaine de variétés</p>                
+            </article>
+        </section>  
+        <section class="container">
+            <article class="fl">
+                <img src="assets/img/miel.png" alt="">
+                <h2>La récolte</h2>
+                <p>Apiculteur, un métier aux multiples facettes</p>               
+            </article>
+            <article class="fl">
+                <img src="assets/img/abeille.png" alt="">
+                <h2>Les abeilles</h2>
+                <p>Les abeilles et leur miel, un miracle de la nature</p>              
+            </article>
+            <article class="fl">
+                <img src="assets/img/fleur.png" alt="">
+                <h2>Les fleurs</h2>
+                <p>La production du miel de fleurs</p>          
+            </article>
+            <div>
+               <a href="savoir.html" class="btn">En savoir plus</a> 
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <article>
+                    <img src="assets/img/aider.png" alt="" class="fl">
+                    <div class="fr">
+                        <h3>Aider les producteurs de miel français.</h3>
+                        <p>BEE est né de la rencontre de deux hommes, l’un Apiculteur breton passionné par son métier et l’autre créateur de sites internet e commerce également passionné de nature et de biodiversité. </p>
+                        <p>
+                            Grâce à ce projet de vente en ligne de miel, nous avons mis en commun nos compétences dans le respect de nos valeurs.
+                        </p>
+                        <a href="lireplus" class="btn">Lire plus</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="fl">
+                        <h3>Notre Cahier des charges</h3>
+                        <p>Pour pouvoir être fournisseur de BEE, chaque apiculteur est tenu par un cahier des charges simple et pourtant très strict car sans compromis. Ce cahier des charges est guidé par deux principes : Des produits naturels de qualité ET des produits 100% français.</p>
+                        <a href="lireplus" class="btn">Lire plus</a>
+                    </div>
+                    <img src="assets/img/biodiversite.png" alt="" class="fr">
+                </article>
+                <article>
+                    <img src="assets/img/cahierdescherges.png" alt="" class="fl">
+                    <div class="fr">
+                        <h3>La biodiversité et le développement durable</h3>
+                        <p>BEE est plus qu’un site de vente en ligne, c’est un outil de sensibilisation des consommateurs. </p>
+                        <p>
+                            Tout est né de la rencontre d’Apiculteurs bretons avec un passionné de nature et de biodiversité qui exerce le métier de la création de sites internet e commerce. <br> Partageant les mêmes valeurs, nous avons décidé d’agir en créant le projet BEE.
+                        </p>
+                        <a href="lireplus" class="btn">Lire plus</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        <div class="container">
+            <h4>BEE dans ma boite email</h4>
+            <p>
+                Recevoir notre programme points fidélité
+            </p>
+            <form action="send.php" method="post">
+                <input type="email" name="newsletter" id="newsletter" placeholder="Votre adresse email">
+                <input type="submit" value="S'inscrire">
+            </form>
+            <nav class="container">
+                <a href="index.html" class="fl">Accueil</a>
+                <a href="boutique.html" class="fl">Boutique</a>
+                <a href="le-miel.html"class="fl">Le miel</a>
+                <a href="manifestation.html" class="fl">Manifestation</a>
+                <a href="moncompte.html" class="fl">Mon compte</a>
+                <a href="mentionlegales.html" class="fl">Mention légales</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

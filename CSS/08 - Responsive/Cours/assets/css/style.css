@@ -1,0 +1,62 @@
+div
+{
+    width: 40rem;
+    height: 10rem;
+    margin: 5rem;
+    float: left;
+
+}
+
+.rouge
+{
+    background-color: red;
+}
+
+.vert
+{
+    background-color: green;
+}
+
+.bleu
+{
+    background-color: blue;
+}
+
+.jaune
+{
+    background-color: yellow;
+}
+
+.orange
+{
+    background-color: orangered;
+}
+
+.violet
+{
+    background-color: violet;
+}
+
+@media (max-width:1600px)
+{
+    div
+    {
+        width: 35rem;
+    }
+    .rouge
+    {
+        background-color: pink;
+    }
+}
+
+@media (max-width:1440px)
+{
+    div
+    {
+        width: 30rem;
+    }
+    .vert
+    {
+        background-color: olive;
+    }
+}

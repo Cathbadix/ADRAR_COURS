@@ -1,0 +1,53 @@
+:root
+{
+    --jaune : rgb(173, 173, 12);
+}
+
+h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 28px;
+    color: var(--jaune);
+}
+
+Section
+{
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-flow: row dense;
+    grid-gap: 8px;
+}
+
+img, video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure
+{
+    height: 240px;
+}
+
+div
+{
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+    height: 488px;
+}
+
+.wdouble
+{
+    grid-column: auto / span 2;
+}
+
+.hdouble
+{
+    grid-row: auto / span 2;
+    height: 488px;  
+}

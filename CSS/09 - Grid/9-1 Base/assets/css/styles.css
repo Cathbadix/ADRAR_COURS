@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    --jaune : #D7D145;
+    --bleu : #46A4E4;
+    --rose : #D55DB6;
+    --violet : #9926AB;
+    --rouge : #B83059;
+    --josefin : 'Josefin Sans', sans-serif;
+}
+html{ font-family: var(--josefin);}
+.dGrid{
+    display: grid;
+}
+h1, h2{
+    font-size: 1.4rem;
+}
+section{
+    grid-template-columns: repeat(6,1fr) ;
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    /* grid-template-columns: 2fr 1fr 1fr 2fr; */
+    /* grid-template-columns: 2fr repeat(2,1fr) 2fr; */
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-gap: 1rem;
+}
+.double{
+    grid-column: span 2;
+}
+section article figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .groupe{
+    grid-gap: 1rem;
+}
+section article{
+    grid-template-rows: 1fr 6rem;
+}
+section article div{
+    background-color: var(--jaune);
+    align-items: center;
+    padding: 3%;
+    color: var(--bleu);
+}
+section article:nth-child(2) div{color: var(--rose);}
+section .groupe article:first-child div{color: var(--rouge);}
+section .groupe article:last-child div{color: var(--violet);}
+
+
+@media (max-width: 1051px) {
+    section{
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+    .double{
+        grid-column: span 1;
+    }
+    .groupe{
+        grid-template-columns: repeat(2,1fr );
+    }
+    section article{
+        grid-template-rows: 40rem 6rem;
+    }
+    section .groupe article{
+        grid-template-rows: 20rem 6rem;
+    }
+}

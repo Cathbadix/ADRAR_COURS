@@ -1,0 +1,49 @@
+.nav
+{
+    width: 90rem;
+    height: 4rem;
+    background-color: pink;
+    float: left;
+}
+
+.categorie
+{
+    width: 30rem;
+    float: left;
+    text-align: center;
+    line-height: 4rem;
+}
+
+a
+{
+    color: darkred;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+a:hover
+{
+    color: red;
+}
+
+.lihide
+{
+    background-color: #e45757;
+}
+
+.nav .categorie ul
+{
+    display: none;
+}
+
+.nav .categorie:hover ul
+{
+    display: block;
+}

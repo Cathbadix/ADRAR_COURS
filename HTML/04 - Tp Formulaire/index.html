@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tp formulaire</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="tp sur le formulaire suite au cours">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="send.php" method="post">
+        <fieldset>
+            <legend>Légende de formulaire</legend>
+            <label for="identifiant">Identifiant</label>
+            <input type="text" name="identifiant" id="identifiant"><br><br>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp"><br><br>
+            <label for="confirmmdp">Confirmation du mot de passe</label>
+            <input type="password" name="confirmmdp" id="confirmmdp"><br><br>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail"><br><br>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">J'aime cocher les cases!!</label><br>
+            <p>J'aime aussi:</p>
+            <input type="radio" name="iliketo" id="pangolin">
+            <label for="pangolin">Les pangolins</label>
+            <input type="radio" name="iliketo" id="chat">
+            <label for="chat">Les chats</label>
+            <input type="radio" name="iliketo" id="escargot">
+            <label for="escargot">Les escargots (en persillade)</label>
+            <input type="radio" name="iliketo" id="banane">
+            <label for="banane">Les bananes</label><br><br>
+            <label for="préférence">Je préfére chanter dans la/le/les:</label><br><br>
+            <select name="préférence" id="préférence">
+                <option value="">voiture</option>
+                <option value="">chambre</option>
+                <option value="">douche</option>
+                <optgroup label="où">
+                    <option value="toilette">toilettes</option>
+                    <option value="caves">cave</option>
+                </optgroup>
+            </select><br><br>
+            <input type="submit" value="Envoyer">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Les petits plus du formulaire</legend>
+            <label for="zonedetexte">Zone de texte</label><br>
+            <textarea name="zonedetexte" id="zonedetexte" cols="20" rows="1" placeholder="Tapez votre texte ici"></textarea><br>
+            <label for="inserturl">Permet d'entrer une URL</label>
+            <input type="url" name="inserurl" id="inserturl"><br><br>
+            <label for="telephone">Permet d'entrer un numéro de téléphone</label>
+            <input type="tel" name="téléphone" id="téléphone"><br><br>
+            <label for="nombre">Permet d'entre un nombre entier</label>
+            <input type="number" name="nombre" id="nombre"><br><br>
+            <label for="curseur">Permet d'afficher un curseur</label>
+            <input type="range" name="curseur" id="curseur" ><br><br>
+            <label for="couleur">Permet d'afficher une couleur</label>
+            <input type="color" name="couleur" id="couleur"><br><br>
+            <label for="ladate">Permet de rentrer une date</label>
+            <input type="date" name="ladate" id="ladate"><br><br>
+            <label for="heure">Permet d'entrer l'heure</label>
+            <input type="time" name="heure" id="heure"><br><br>
+            <label for="semaine">Permet d'entrer une semaine</label>
+            <input type="week" name="semaine" id="semaine"><br><br>
+            <label for="mois">Permet d'entre le mois</label>
+            <input type="month" name="mois" id="mois"><br><br>
+            
+        </fieldset>
+        <br>
+        <form action="search.php" method="get">
+            <fieldset>
+                <legend>formulaire de recherche</legend>
+                <input type="search" name="recherche" id="recherche" placeholder="Rechercher">
+                <input type="submit" value="Rechercher">
+            </fieldset>
+        </form>
+
+    </form>
+</body>
+</html>

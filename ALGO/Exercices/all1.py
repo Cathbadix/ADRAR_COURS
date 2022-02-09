@@ -43,47 +43,62 @@ print(return_max(l2))
 print(return_max(l3))
 
 # ++ Fonction qui prend en entrée un tableau de nombres positifs et qui retourne la deuxième plus grande valeur du tableau.
+def second_biggest(l):
+    top1 = 0
+    top2 = 0
+    for e in l:
+        if e>top1:
+            top2 = top1
+            top1 = e
+        elif e>top2:
+            top2 = e
+    return top2
+print(second_biggest([2,1,9,5,7,5,6,58,12,47,64,21,47,59,65,22]))
 
 # Fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
 def count(l,n):
-    count = 0
+    counter = 0
     for i in range(len(l)):
         if n == l[i]:
-            count += 1
-    return count
-l4 = [2,1,2,3,1,2,3,4,2,3,4]
-print(count(l4,2))
-print(count(l4,3))
-print(count(l4,1))
+            counter += 1
+    return counter
+
+print(count([2,1,2,3,1,2,3,4,2,3,4],2))
+print(count([2,1,2,3,1,2,3,4,2,3,4],3))
+print(count([2,1,2,3,1,2,3,4,2,3,4],1))
 
 # Fonction qui prend en entrée un tableau et un nombre et qui retourne True si le nombre existe dans le tableau, False sinon.
+
 # def true_false(l,n):    
 #     for i in range(len(l)):
 #         if n == l[i]:
 #             return True
 #         else:
 #             return False 
+
 # def true_false(l,n):
 #     a = False
 #     for i in range(len(l)):
 #         if n == l[i]:
 #             a = True
 #     return a 
-def true_false(l,n):    
-    for i in range(len(l)):
-        if n == l[i]:
-            return True
-    return False
+
+# def true_false(l,n):    
+#     for i in range(len(l)):
+#         if n == l[i]:
+#             return True
+#     return False
+
+def true_false(l,n):   
+    return count(l,n) >= 1   
         
-        
-l4 = [1,2,3,1,2,3,4,2,3,4]
-print(true_false(l4,1))     
-print(true_false(l4,10))
-print(true_false(l4,9))     
-print(true_false(l4,4))
-print(true_false(l4,3))
-print(true_false(l4,2))
-print(true_false(l4,21))
+print(true_false([1,2,3,1,2,3,4,2,3,4],1))     
+print(true_false([1,2,3,1,2,3,4,2,3,4],10))
+print(true_false([1,2,3,1,2,3,4,2,3,4],9))     
+print(true_false([1,2,3,1,2,3,4,2,3,4],4))
+print(true_false([1,2,3,1,2,3,4,2,3,4],3))
+print(true_false([1,2,3,1,2,3,4,2,3,4],2))
+print(true_false([1,2,3,1,2,3,4,2,3,4],21))
 
 
 # Variante de l'exo : on **sait** que le tableau reçu est trié (on ne le vérifie pas). Comment exploiter cette information pour améliorer la recherche d'un élément ?

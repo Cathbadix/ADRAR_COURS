@@ -33,11 +33,11 @@ switch (prenom) {
         console.log(messageF);
         break;
     default:
-        console.log("Vous n'avez pasz rentré de prènom!");
+        console.log("Vous n'avez pas rentré de prènom!");
 }
 
 var age = prompt(age);
 
 age = +age;
 
-age < 18 ? console.log("vous êtes mineur") : console.log("Vous êtes majeur");
+age < 18 ? console.log("Vous êtes mineur") : console.log("Vous êtes majeur");

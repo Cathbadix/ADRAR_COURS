@@ -11,7 +11,9 @@ var b = "ty";
 
 console.log(a+b);
 
+(()=>{
 
+})();
 function azerty(a,b) {
     var a = "azer";
     var b = "ty";
@@ -33,3 +35,19 @@ function multiplier(num01,num02) {
     return num01 * num02;
 }
 console.log(multiplier(20,5));
+
+
+() => {
+
+}
+
+let azerty = () => {
+
+}
+
+let titleSelector = document.querySelector("h1");
+
+titleSelector.textContent = "ezeefko";
+
+titleSelector.className("foo");
+

@@ -1,0 +1,86 @@
+header
+{
+    height: 45px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.firstul
+{
+    display: flex;   
+}
+
+.firstli
+{
+    margin: 0px 0px 0px 10px;
+}
+
+.containerTitle
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+.container
+{
+    margin: 0% 10% 0% 10%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item
+{
+    min-width: 300px;
+    width: 32%;
+    margin: 10px 2px 5px 2px ;
+    padding:5px;
+    border: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;    
+}
+
+h2
+{
+    margin: 5px 0px 0px 0px;
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+p
+{
+    padding: 10px;
+    border: 1px 0px 0px 0px;
+    border-color: black;
+    border-style: solid;
+}
+
+footer
+{
+    height: 80px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.ulfoot
+{
+    display: flex;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: black;
+}

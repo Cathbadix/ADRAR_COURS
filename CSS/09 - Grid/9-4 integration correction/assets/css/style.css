@@ -1,0 +1,118 @@
+@import url(reset.css);
+@import url(style-media.css);
+/* la font family est gérée dans le reset car je n'ai qu'une famille a gérer et c'est une police systeme */
+:root{
+    --primary: #FFD600;
+    --secondary: #67686A;
+    --black:#000000;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.displayGrid{
+    display: grid;
+}
+.titre{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--black);
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+.lien{
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* font-weight: bold; 800 ou bold c'est la memme chose */
+    font-size: 1.2rem;
+}
+header{
+    background-color: var(--primary);
+}
+header input, header label{
+    display: none;
+    /* opacity: 0;on met pas ca pk ca garde la place dans le html c'est pas ce qu'on veut */
+}
+header a#mobile{
+    display: none;
+}
+header nav ul{
+    grid-template-columns: 40% repeat(3,1fr);
+    align-items: center;
+    justify-items: end;
+}
+header nav ul li a{
+ /* CF: class lien */
+}
+header nav ul li:first-child{
+    justify-self: start;
+}
+#sect01{
+    /* background-image: url(../img/fond.jpg);
+    background-size: cover;
+    background-color: var(--primary);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom ; */
+    /* on peut utiliser la surper propriétté background pour eviter de faire 1000000000 lignes de CSS */
+    background: url(../img/fond.jpg) var(--primary) no-repeat fixed center bottom / cover;
+    /* on sépare position et size par un slash !!  */
+    /* height: 100vh;pas besoin car on va fixer la hauteur sur le parent qui a le display grid */
+}
+#sect01 article{
+    height: 100vh;
+    align-content: center;
+    color: var(--primary);
+    width: 60%;
+    margin: auto;
+}
+#sect01 article h1{
+    text-transform: uppercase;
+    font-size: 5vw;
+    /* les textes peuvent prendre en compte les unités de mesures en view-width ou height. Sur certains titre on a donc une police qui s'adapte à l'écran NE PAS EN ABUSER */
+    font-weight: 900;
+    margin-bottom: 1rem;
+
+}
+#sect01 article p{
+    font-size: 1.5rem;
+}
+#sect02{
+    background-color: var(--primary);
+    padding: 2rem 0;
+
+}
+#sect02 div{
+    /* grid-auto-flow: column; possible sir on peut positionner les enfants en column permet d'eviter le grid template columns des fois pas ici donc pk on peut pas span 3 le h2 */
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+#sect02 div h2{
+    grid-column: span 3;
+}
+#sect02 div article img{
+    width: 100%;
+}
+footer{
+    background-color: var(--secondary);
+    padding: 1.5rem 0;
+}
+
+footer nav{
+    grid-auto-flow: column;
+}
+ footer nav a{
+/*    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;pas besoin de le rajouer car meme style que pour le header */
+} 
+footer nav a:nth-child(2){
+    justify-self: center;
+}
+footer nav a:last-child{
+    justify-self: end;
+}

@@ -1,0 +1,121 @@
+/* VARIABLES*/
+:root{
+    --white : #FFFFFF;
+    --gold : #FFD600;
+    --grey : #00000029;
+    --dark : #000000;
+    --greyd : #67686A;
+    --arial : Arial, Helvetica, sans-serif;
+}
+
+/* GENERALE */
+.dGrid
+{
+    display: grid;
+}
+
+.center
+{
+    width: 70%;
+    margin: auto;
+}
+
+.upper
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* HEADER */
+header
+{
+    /* height: 150px; */
+    background-color: var(--gold);
+}
+
+header nav ul
+{
+    grid-template-columns: auto repeat(3,1fr);
+    align-items: center;
+    justify-items: end;
+}
+
+/* FIRSTCONTENT */
+
+.firstcontent
+{
+    height: 35rem;
+    background-image: url('../img/imgContent.png');
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+aside
+{
+    width: 30vw;
+    margin: auto;
+}
+
+h1
+{
+    /* font-size: 2.5rem; */
+    font-size: 3vw;
+    font-weight: 900;
+
+    color: var(--gold);
+}
+
+aside p
+{
+    color: var(--gold);
+}
+
+/*SECONDCONTENT*/
+.secondcontent
+{
+    background-color: var(--gold);
+}
+
+h2
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.secondcontent div
+{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.secondcontent div article
+{
+    width: 252px;
+}
+
+h3
+{
+    font-size: 2.5vw;
+    padding: 1rem 0rem;
+}
+
+.secondcontent div article p
+{
+    padding: 0rem 0rem 4rem 0rem;
+}
+
+
+/*FOOTER*/
+footer
+{
+    background-color: var(--greyd);
+}
+

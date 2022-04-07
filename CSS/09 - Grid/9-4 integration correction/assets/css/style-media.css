@@ -1,0 +1,92 @@
+@import url(style.css);
+@media(max-width:870px ){
+    header a#mobile{
+        display: block;
+        justify-self: start;
+    }
+    header nav ul li:first-child{
+        display: none;
+    }
+    header nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+    header nav ul{
+        overflow: hidden;
+        list-style: none;
+        margin-top: 0;
+        grid-column: span 2;
+        justify-self: stretch
+    }
+    header label {
+        display: block;
+        justify-self: end;
+    }
+    /* header nav input{display:none;} */
+    header nav input label div{
+        z-index:100;
+    }
+    header nav label div,header nav input~li{position: relative;}
+    header nav input+label div{
+        width: 5rem;
+        overflow:hidden;
+    }
+    header nav ul li{
+        transform: translateY(-12rem);
+        transition: all .5s; 
+        text-align: right;
+    }
+    header nav ul li a{
+        font-size: 1.6rem;
+        font-family: Roboto;
+        font-weight: 700;
+        text-decoration: none;
+        color: darkblue;
+    }
+    header nav input:checked~ul li{
+        transform:translateY(0);
+        transition: all .5s; 
+    }
+    header nav input:checked+label div>hr:first-child{
+        transform:rotate(45deg) translate(.9rem,.9rem);
+        transform-origin: 50% 50%;
+    }
+    header nav input:checked+label div>hr:nth-child(2){
+        transform:translateX(10rem);
+    }
+    header nav input:checked+label div>hr:last-child{
+        transform:rotate(-45deg) translate(.9rem,-.9rem);
+    }
+    header hr{
+        display: inline-block;
+        border:none;
+        height:.4rem;
+        width: 100%;
+        margin:.2rem 0;
+        background-color:black;
+        transition: all .5s;
+    }
+    #sect02 div{
+        grid-template-columns: 1fr;
+    }
+    #sect02 div h2{
+        grid-column: span 1;
+        /* si on laisse le span 3 il crée quand meme trois colonnes et on  ne peut pas passer a la ligne les articles. */
+    }
+    footer nav{
+        grid-auto-flow: row;
+    }
+    footer nav a{
+        padding: .5rem;
+    }
+    footer nav a:first-child{
+        justify-self: center;
+    }
+    footer nav a:last-child{
+        justify-self: center;
+    }
+    
+ }

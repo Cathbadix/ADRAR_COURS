@@ -8,7 +8,7 @@
  >= supérieur ou égal à
  != pas égal valeur
  !== pas égal valeur et type
- ? : opérateur ternaire |     resultat ? 0 : 1 
+ ? : opérateur ternaire |     condition ? 0 : 1 
  Opérateur logique
  && et 
  || ou 

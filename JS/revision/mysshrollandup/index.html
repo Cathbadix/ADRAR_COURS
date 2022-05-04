@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content= "initial-scale=1.0">
+    <title>on scroll change</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        article {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            display: flex;
+            justify-content: end;
+            position: fixed;
+            bottom: 30px;
+            right: 50px;
+        }
+
+        article p {
+            font-size: 25px;
+            color: white;
+        }
+
+        body {
+            height: 300vh;
+        }
+
+        body>article:nth-child(2)>div:nth-child(1)>p:nth-child(1) {
+            position: absolute;
+            left: -32.5px;
+            top: -47px;
+            font-size: 50px;
+        }
+
+        body>article:nth-child(2)>div:nth-child(1)>p:nth-child(2) {
+            position: absolute;
+            left: -25.6px;
+            font-size: 50px;
+            top: -42px;
+        }
+
+        div {
+            position: relative;
+        }
+    </style>
+
+    <article>
+        <div>
+            <p>^</p>
+            <p>|</p>
+        </div>
+    </article>
+    <script src="onScrollChange.js"></script>
+</body>
+
+</html>

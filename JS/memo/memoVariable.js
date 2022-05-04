@@ -16,7 +16,6 @@
     le fichier ce lance
     Si vous êtes bloqué dans la cli (command line interface)
     .exit pour sortir .help pour affiché l'aide (n'oubliez pas de lire le terminal en cas d'erreur).
-    
 /*
     Déclaration de variable
 */
@@ -33,7 +32,9 @@ let hello;
     Affichage
 */
 console.log(); // peut contenir un variable, affiche le contenus dans la console
+(function(){
 
+}());
 //Les élément si dessous ne pourront être executer que sur le navigateur
 //car ils n'existes pas en dehors du navigateur
 //alert();    //affiche une boite de dialogue
@@ -51,7 +52,7 @@ console.log(); // peut contenir un variable, affiche le contenus dans la console
         console.log("Voici le résultat de ma variable " + variable + " et l'autre " + variable2);
         Gabarit litéraux:
         console.log(`Voici le résultat de ma variable ${variable} et l'autre ${variable2}`);
-        Pour la deuxième méthode on utilisera les backquotes touche alt+7 du clavier 
+        Pour la deuxième méthode on utilisera les backquotes touche alt gr+7 du clavier 
         ${variable} pour indiqué qu'il s'agit d'une variable.   
     */
 
@@ -62,7 +63,7 @@ console.log(); // peut contenir un variable, affiche le contenus dans la console
     * Multiplication
     / Division
     ++ incrementation (augmente la valeur de 1) variable += 1; variable = variable + 1
-    -- Décrémentation (diminue la valeur de 1)  variable += 1; variable = variable + 1
+    -- Décrémentation (diminue la valeur de 1)  variable -= 1; variable = variable - 1
     % Modulo reste d'une division
     ** Exponentiel 2**3 = 2x2x2 
 */
